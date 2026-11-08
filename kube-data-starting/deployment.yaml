@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: story-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: story
@@ -14,4 +14,10 @@ spec:
     spec:
       containers:
         - name: story
-          image: shiiyan9123/kube-data-story
+          image: shiiyan9123/kube-data-story:1
+          volumeMounts:
+            - mountPath: /app/story
+              name: story-volume
+      volumes:
+        - name: story-volume
+          emptyDir: {} 
