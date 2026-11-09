@@ -14,7 +14,10 @@ spec:
     spec:
       containers:
         - name: story
-          image: shiiyan9123/kube-data-story:1
+          image: shiiyan9123/kube-data-story:2
+          env:
+            - name: STORY_FOLDER
+              value: 'story'
           volumeMounts:
             - mountPath: /app/story
               name: story-volume
