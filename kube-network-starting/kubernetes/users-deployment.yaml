@@ -15,5 +15,8 @@ spec:
       containers:
         - name: users
           image: shiiyan9123/kube-network-user:latest
+          env:
+            - name: AUTH_ADDRESS
+              value: localhost
         - name: auth
           image: shiiyan9123/kube-network-auth:latest
