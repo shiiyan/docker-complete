@@ -17,4 +17,4 @@ spec:
           image: shiiyan9123/kube-network-user:latest
           env:
             - name: AUTH_ADDRESS
-              value: 10.103.7.207
+              value: "auth-service.default"
