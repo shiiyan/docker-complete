@@ -14,4 +14,6 @@ spec:
     spec:
       containers:
         - name: users
-          image: shiiyan9123/kube-network-user
+          image: shiiyan9123/kube-network-user:latest
+        - name: auth
+          image: shiiyan9123/kube-network-auth:latest
