@@ -8,6 +8,7 @@ spec:
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
+  storageClassName: standard
   hostPath:
     path: /data
     type: DirectoryOrCreate
